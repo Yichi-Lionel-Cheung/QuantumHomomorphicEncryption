@@ -1,0 +1,40 @@
+site_name: qhe
+site_url: https://ClonelessLab.github.io/homomorphic-encryption/
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - search.highlight
+    - search.share
+    - search.suggest
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+nav:
+  - Home: index.md
+  - API:
+    - api list: api/all-api.md
+plugins:
+  search:
+  mkdocstrings:
+    default_handler: python
+    handlers:
+      python:
+        paths: [python]
+        options:
+          docstring_style: google
+          show_source: false
+          show_root_heading: true
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

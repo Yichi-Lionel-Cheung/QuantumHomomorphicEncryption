@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qhe"
+authors = [
+    { name = "Lionel Cheung", email = "TODO@mail.me" },
+]
+description = "quantum homomorphic encryption package"
+readme = "README.md"
+keywords = ["quantum homormorphic encryption"]
+license = { text = "TODO" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy",
+    "qiskit",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "twine",
+    "pytest",
+    "pytest-cov",
+    "mkdocs",
+    "mkdocs-material",
+    "pymdown-extensions",
+    "mkdocstrings[python]",
+]
+
+# [project.urls]
+# Homepage = "TODO"
+# Documentation = "TODO"
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.setuptools_scm]
+write_to = "python/qhe/_version.py"
