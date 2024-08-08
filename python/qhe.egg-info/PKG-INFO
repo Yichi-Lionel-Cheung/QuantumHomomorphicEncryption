@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: qhe
+Version: 0.0.2.dev2+g01a02bd
+Summary: quantum homomorphic encryption package
+Author-email: Lionel Cheung <TODO@mail.me>
+License: TODO
+Keywords: quantum homormorphic encryption
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: qiskit
+Provides-Extra: dev
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: mkdocs; extra == "dev"
+Requires-Dist: mkdocs-material; extra == "dev"
+Requires-Dist: pymdown-extensions; extra == "dev"
+Requires-Dist: mkdocstrings[python]; extra == "dev"
+
+# Homomorphic encryption
+
+see Notion-page `Tasks/Dual HE & HE`
+
+install
+
+```bash
+## download the repo
+git clone git@github.com:ClonelessLab/homomorphic-encryption.git
+
+## for general usage
+pip install .
+
+## for developer
+pip install -e ".[dev]"
+```
+
+Run unittest
+s
+```bash
+pytest
+```
+
+Build docs
+
+```bash
+mkdocs serve
+```

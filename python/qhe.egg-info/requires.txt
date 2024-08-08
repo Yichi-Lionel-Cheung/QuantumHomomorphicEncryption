@@ -1,0 +1,11 @@
+numpy
+qiskit
+
+[dev]
+twine
+pytest
+pytest-cov
+mkdocs
+mkdocs-material
+pymdown-extensions
+mkdocstrings[python]
